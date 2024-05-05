@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        tools:context=".ClubList"
+        android:id="@+id/LinearLayout">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Clubs.."
+                android:textSize="70px"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                >
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/FOSS_Club"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            android:layout_margin="20dp"
+            android:background="@color/card2">
+
+
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardElevation="30dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/card4">
+
+
+                </ImageView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="left">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/foss"
+                        android:background="@color/card4">
+
+                    </ImageView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="70dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="60dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp">
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="FOSS Club"
+                android:textStyle="bold"
+                android:layout_gravity="right|center">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                android:src="@drawable/pinbold">
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            android:layout_margin="20dp"
+            android:background="@color/card3"
+            android:id="@+id/appintech">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardElevation="30dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp">
+
+                </ImageView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+
+                    android:layout_gravity="left">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/card2"
+                        android:src="@drawable/appintech">
+
+                    </ImageView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="AppIntech"
+                android:textStyle="bold"
+                android:layout_gravity="right|center">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/lightpin">
+
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/tycoon"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            android:layout_margin="20dp"
+            android:background="@color/card2">
+
+
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardElevation="30dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/card4">
+
+
+                </ImageView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="left">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="148dp"
+                        android:background="@color/card4"
+                        android:src="@drawable/tycoon">
+
+                    </ImageView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="70dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="60dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp">
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_margin="10dp"
+                android:text="     Tycoon"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/lightpin">
+
+
+            </ImageView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:elevation="5dp"
+            android:layout_margin="20dp"
+            android:background="@color/card3">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardElevation="30dp"
+                app:cardCornerRadius="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp">
+
+                </ImageView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+
+                    android:layout_gravity="left">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/card2"
+                        android:src="@drawable/appintech">
+
+                    </ImageView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:text="AppIntech"
+                android:textStyle="bold"
+                android:layout_gravity="right|center">
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/lightpin">
+
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

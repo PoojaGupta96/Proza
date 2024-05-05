@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:id="@+id/linearLayout">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="80dp"
+        app:cardElevation="30dp"
+        app:cardBackgroundColor="@color/cyan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interest's"
+                android:id="@+id/LoginText"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Literature"
+                    android:id="@+id/btnLiterature"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/writing" />
+
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_margin="40px"
+                    android:id="@+id/btncoding"
+                    android:focusableInTouchMode="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/browser" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:id="@+id/btnculture"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/culture" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:id="@+id/btn"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bulb" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_margin="40px"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/environment" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/cooking" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/console" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/healthcare" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/photographer" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:focusableInTouchMode="true"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="40px"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/film" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sports" />
+
+                <ImageButton
+                    android:layout_width="250px"
+                    android:layout_height="250px"
+                    android:layout_margin="40px"
+                    android:focusableInTouchMode="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/touch_selector"
+                    android:padding="40px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/other" />
+
+            </LinearLayout>
+
+            <Button
+            android:id="@+id/DoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="110dp"
+            android:focusableInTouchMode="true"
+            android:backgroundTint="@color/yellow"
+            android:text="Done"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp" />>
+
+            </LinearLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

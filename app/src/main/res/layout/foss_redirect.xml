@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="FossRedirectActivity"
+    android:id="@+id/LinearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="0dp"
+            android:elevation="10dp"
+            android:backgroundTint="@color/card1"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CardView">
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center_horizontal"
+                android:elevation="50px"
+ 
+                android:backgroundTint="@color/grey">
+
+
+
+            <ImageView
+                android:id="@+id/imagefoss"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerInside"
+                android:layout_margin="10dp"
+                android:src="@drawable/foss"
+                tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Foss Club"
+                    android:textAllCaps="true"
+                    android:textSize="15dp">
+
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hello">
+
+                </TextView>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textOn="Previous"
+                android:textOff="Upcoming"
+                android:thumb="@drawable/thumb"
+                app:showText="true"
+                app:track="@drawable/track">
+
+
+            </androidx.appcompat.widget.SwitchCompat>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:layout_margin="15dp"
+        android:background="@color/card2"
+        android:id="@+id/club_event_1">
+
+
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="250px"
+            android:adjustViewBounds="true"
+            android:contentDescription="Literature"
+            android:id="@+id/date_picker_actions2"
+            android:layout_gravity="center"
+
+            android:focusableInTouchMode="true"
+            android:background="@drawable/touch_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/date1" />
+
+
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="14dp"
+            android:text="Project Expo to be conducted within college departments"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+        <ImageButton
+            android:id="@+id/notify2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:focusableInTouchMode="true"
+            android:paddingRight="12px"
+            android:backgroundTint="@color/card2"
+            android:scaleType="centerInside"
+            android:src="@drawable/noti1" />
+
+        <ImageButton
+            android:id="@+id/share2"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:backgroundTint="@color/card2"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/written2"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="top|center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:backgroundTint="@color/card2"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/written" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:layout_margin="15dp"
+        android:background="@color/card3">
+
+
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="250px"
+            android:adjustViewBounds="true"
+            android:contentDescription="Literature"
+            android:id="@+id/date_picker_actions"
+            android:layout_gravity="center"
+
+            android:focusableInTouchMode="true"
+            android:background="@drawable/touch_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/date1" />
+
+
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="14dp"
+            android:text="Project Expo to be conducted within college departments"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+        <ImageButton
+            android:id="@+id/notify"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:focusableInTouchMode="true"
+            android:paddingRight="12px"
+            android:backgroundTint="@color/card3"
+            android:scaleType="centerInside"
+            android:src="@drawable/noti1" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:backgroundTint="@color/card3"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/written"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="top|center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:backgroundTint="@color/card2"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/written" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

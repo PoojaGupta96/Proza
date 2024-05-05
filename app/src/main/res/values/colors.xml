@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF </color>
+    <color name="red">#FF0000</color>
+    <color name="cyan">#547983</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="semi_slate">#768692</color>
+    <color name="card1">#D7E4E1</color>
+    <color name="card2">#E5F6DF</color>
+    <color name="card3">#FFE2E6</color>
+    <color name="card4">#F1D3B2</color>
+    <color name="grey">#D0D0D0</color>
+</resources>

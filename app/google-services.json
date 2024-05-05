@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "715179792970",
+    "project_id": "academybox-f8b53",
+    "storage_bucket": "academybox-f8b53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715179792970:android:a4f4c0c2b5016e83e4e4b3",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtxvo9vtxhZhh3XJaxP7MIiunBgp4Mfq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
