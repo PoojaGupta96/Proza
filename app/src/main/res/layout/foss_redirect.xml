@@ -31,8 +31,15 @@
  
                 android:backgroundTint="@color/grey">
 
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/img"
+                    android:layout_gravity="left"
+                    android:scaleType="center"
+                    android:id="@+id/back_btn">
 
-
+                </ImageButton>
             <ImageView
                 android:id="@+id/imagefoss"
                 android:layout_width="100dp"
@@ -43,28 +50,42 @@
                 android:layout_margin="10dp"
                 android:src="@drawable/foss"
                 tools:ignore="ContentDescription" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:padding="20dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_gravity="top|left"
                     android:text="Foss Club"
+                    android:textStyle="bold"
                     android:textAllCaps="true"
                     android:textSize="15dp">
 
 
                 </TextView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Hello">
+                    android:layout_gravity="left"
+                    android:text="Coding"
+                    android:textColor="@color/red">
 
                 </TextView>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
 
+                    android:text="Free Open Source Club ">
 
+                </TextView>
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
@@ -78,7 +99,8 @@
                 android:textOff="Upcoming"
                 android:thumb="@drawable/thumb"
                 app:showText="true"
-                app:track="@drawable/track">
+                app:track="@drawable/track"
+                android:id="@+id/switchs">
 
 
             </androidx.appcompat.widget.SwitchCompat>
@@ -93,12 +115,17 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/parent_layout">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:elevation="5dp"
         android:layout_margin="15dp"
         android:background="@color/card2"
-        android:id="@+id/club_event_1">
+        android:id="@+id/up_club_event_1">
 
 
 
@@ -168,13 +195,15 @@
 
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:elevation="5dp"
         android:layout_margin="15dp"
-        android:background="@color/card3">
+        android:background="@color/card3"
+        android:id="@+id/up_club_event_2">
 
 
 
@@ -243,6 +272,84 @@
             android:src="@drawable/written" />
 
 
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/event_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="5dp"
+        android:layout_margin="15dp"
+        android:background="@color/card2"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="250px"
+            android:adjustViewBounds="true"
+            android:contentDescription="Literature"
+            android:id="@+id/date_picker_actions3"
+            android:layout_gravity="center"
+
+            android:focusableInTouchMode="true"
+            android:background="@drawable/touch_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/date1" />
+
+
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="14dp"
+            android:text="Project Expo to be conducted within college departments"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+        <ImageButton
+            android:id="@+id/notify3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:focusableInTouchMode="true"
+            android:paddingRight="12px"
+            android:backgroundTint="@color/card3"
+            android:scaleType="centerInside"
+            android:src="@drawable/noti1" />
+
+        <ImageButton
+            android:id="@+id/share3"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:backgroundTint="@color/card3"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/written3"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="top|center_horizontal"
+            android:adjustViewBounds="true"
+            android:background="@drawable/touch_selector"
+            android:backgroundTint="@color/card2"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/written" />
+
+        <!-- Add views for event_activity here, matching the structure of club_event_1 -->
+        <!-- For example, copy the ImageButton, TextView, and other views from club_event_1 -->
+        <!-- Adjust the IDs, content, and other attributes as needed -->
+
+    </LinearLayout>
     </LinearLayout>
 
 

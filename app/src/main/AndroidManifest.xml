@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".activity_appintech_event2"
+            android:exported="false" />
+        <activity
+            android:name=".activity_foss_event2"
+            android:exported="false" />
+        <activity
             android:name=".activity_tycoon_event1"
             android:exported="false" />
         <activity

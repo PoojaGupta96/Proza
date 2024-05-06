@@ -30,41 +30,65 @@
                 android:elevation="50px"
 
                 android:backgroundTint="@color/grey">
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/img"
+                    android:layout_gravity="left"
+                    android:scaleType="center"
+                    android:id="@+id/back_btn">
+
+                </ImageButton>
 
 
 
                 <ImageView
-                    android:id="@+id/imagefoss"
+                    android:id="@+id/tycoon"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center_vertical"
                     android:layout_marginTop="0dp"
                     android:scaleType="centerInside"
                     android:layout_margin="10dp"
-                    android:src="@drawable/foss"
+                    android:src="@drawable/tycoon"
                     tools:ignore="ContentDescription" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:padding="20dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Foss Club"
-                    android:textAllCaps="true"
-                    android:textSize="15dp">
-
-
-                </TextView>
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Hello">
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left"
+                        android:text="Tycoon Club"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="15dp">
 
 
+                    </TextView>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Literature"
+                        android:textColor="@color/red">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left"
+
+                        android:text="Literature Club of\n CSE-General Department">
+
+                    </TextView>
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 

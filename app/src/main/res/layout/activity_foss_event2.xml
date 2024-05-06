@@ -6,9 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".activity_appintent_event1"
-    android:id="@+id/appintech">
-
+    tools:context=".activity_foss_event2"
+    android:id="@+id/club_event_1">
 
     <ImageButton
         android:layout_width="30dp"

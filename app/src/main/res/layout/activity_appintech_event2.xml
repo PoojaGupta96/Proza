@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".activity_appintent_event1"
+    tools:context=".activity_appintech_event2"
     android:id="@+id/appintech">
 
 
