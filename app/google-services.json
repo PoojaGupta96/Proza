@@ -1,21 +1,22 @@
 {
   "project_info": {
-    "project_number": "715179792970",
-    "project_id": "academybox-f8b53",
-    "storage_bucket": "academybox-f8b53.appspot.com"
+    "project_number": "832704271974",
+    "firebase_url": "https://jgi-club-default-rtdb.firebaseio.com",
+    "project_id": "jgi-club",
+    "storage_bucket": "jgi-club.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:715179792970:android:a4f4c0c2b5016e83e4e4b3",
+        "mobilesdk_app_id": "1:832704271974:android:03cdc1247b8d1ad84c7fa7",
         "android_client_info": {
-          "package_name": "com.example.myapplication"
+          "package_name": "com.example.jgiclubs"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAtxvo9vtxhZhh3XJaxP7MIiunBgp4Mfq4"
+          "current_key": "AIzaSyAs_Y4T3h_tM7bZ8E663uy0VaDjK-D7H9I"
         }
       ],
       "services": {

@@ -1,16 +1,21 @@
-package com.example.myapplication;
+package com.example.jgiclubs;
 
+import static com.example.jgiclubs.R.id;
+import static com.example.jgiclubs.R.layout;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+public class MainActivity extends AppCompatActivity {
 
-public class ClubList extends AppCompatActivity {
 
-
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,27 +26,23 @@ public class ClubList extends AppCompatActivity {
         foss_redirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ClubList.this,FossRedirectActivity.class));
-                finish();
+                startActivity(new Intent(MainActivity.this,FossRedirectActivity.class));
+//                finish();
             }
         });
         appintech_redirect.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity((new Intent(ClubList.this,AppintechActivity.class)));
-                finish();
+                startActivity((new Intent(MainActivity.this,AppintechActivity.class)));
+//                finish();
             }
         }));
         tycoon_redirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ClubList.this,TycoonActivity.class));
-                finish();
+                startActivity(new Intent(MainActivity.this,TycoonActivity.class));
+//                finish();
             }
         });
     }
 }
-
-
-
-

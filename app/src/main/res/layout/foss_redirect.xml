@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/bg_color"
     tools:context="FossRedirectActivity"
     android:id="@+id/LinearLayout">
 
@@ -18,6 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginTop="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:elevation="10dp"
             android:backgroundTint="@color/card1"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CardView">
@@ -32,11 +35,12 @@
                 android:backgroundTint="@color/grey">
 
                 <ImageButton
-                    android:layout_width="30dp"
+                    android:layout_width="50dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/img"
-                    android:layout_gravity="left"
-                    android:scaleType="center"
+                     android:src="@drawable/img"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black"
                     android:id="@+id/back_btn">
 
                 </ImageButton>
@@ -62,6 +66,7 @@
                     android:layout_gravity="top|left"
                     android:text="Foss Club"
                     android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:textAllCaps="true"
                     android:textSize="15dp">
 
@@ -81,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|left"
-
+                    android:textColor="@color/black"
                     android:text="Free Open Source Club ">
 
                 </TextView>
@@ -90,20 +95,23 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center"
+                android:padding="10dp"
+                android:layout_margin="20dp"
                 android:textColor="@color/white"
                 android:textColorHighlight="@color/white"
                 android:textOn="Previous"
                 android:textOff="Upcoming"
                 android:thumb="@drawable/thumb"
-                app:showText="true"
-                app:track="@drawable/track"
-                android:id="@+id/switchs">
+            android:track="@drawable/track"
+            app:showText="true"
+            app:switchTextAppearance="@style/SwitchTextStyle"
+            android:elevation="4dp"
+            />
 
-
-            </androidx.appcompat.widget.SwitchCompat>
 
 
         </com.google.android.material.card.MaterialCardView>
@@ -117,6 +125,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_margin="10dp"
         android:id="@+id/parent_layout">
     <LinearLayout
         android:layout_width="match_parent"
@@ -147,11 +156,11 @@
 
 
         <TextView
-            android:layout_width="220dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="14dp"
-            android:text="Project Expo to be conducted within college departments"
+            android:text="Winner announcement of Project Expo scheduled on 5th Nov 2024"
             android:textStyle="bold"
             android:layout_gravity="center"/>
 
@@ -229,7 +238,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="14dp"
-            android:text="Project Expo to be conducted within college departments"
+            android:text="Coding competetion schedule on 31 Sep 2024"
             android:textStyle="bold"
             android:layout_gravity="center"/>
 

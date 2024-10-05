@@ -5,6 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@color/white"
     android:padding="10dp"
     android:fillViewport="false">
 
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-
+        android:background="@color/white"
 
         tools:context=".ClubList"
         android:id="@+id/LinearLayout">
@@ -24,14 +25,16 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="  Clubs.."
-                android:textSize="70px"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                >
+                android:fontFamily="@font/akaya_kanadaka"
+                android:text="  Clubs.."
+                android:textColor="@color/black"
+                android:textSize="70px">
 
             </TextView>
         </LinearLayout>
@@ -44,20 +47,13 @@
             android:layout_margin="20dp"
             android:background="@color/card2">
 
-
-
-
-
-
-
-
-
             <androidx.cardview.widget.CardView
-                android:layout_width="165dp"
-                android:layout_height="165dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="10dp"
                 android:layout_gravity="center"
                 app:cardElevation="30dp"
+                app:cardBackgroundColor="@color/bg_color"
                 app:cardCornerRadius="20dp">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -72,6 +68,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/bg_color"
+
                     android:layout_gravity="left">
                     <ImageView
                         android:layout_width="wrap_content"
@@ -104,6 +102,7 @@
                 android:layout_margin="10dp"
                 android:textSize="20dp"
                 android:text="FOSS Club"
+                android:textColor="@color/club_list_color"
                 android:textStyle="bold"
                 android:layout_gravity="right|center">
 
@@ -132,11 +131,12 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="165dp"
-                android:layout_height="165dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="10dp"
                 android:layout_gravity="center"
                 app:cardElevation="30dp"
+                app:cardBackgroundColor="@color/bg_color"
                 app:cardCornerRadius="20dp">
                 <ImageView
                     android:layout_width="wrap_content"
@@ -148,6 +148,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/bg_color"
 
                     android:layout_gravity="left">
 
@@ -183,6 +184,7 @@
                 android:layout_margin="10dp"
                 android:textSize="20dp"
                 android:text="AppIntech"
+                android:textColor="@color/club_list_color"
                 android:textStyle="bold"
                 android:layout_gravity="right|center">
 
@@ -215,10 +217,11 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="165dp"
-                android:layout_height="165dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="10dp"
                 android:layout_gravity="center"
+                app:cardBackgroundColor="@color/bg_color"
                 app:cardElevation="30dp"
                 app:cardCornerRadius="20dp">
                 <ImageView
@@ -234,12 +237,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/bg_color"
+
                     android:layout_gravity="left">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="148dp"
                         android:background="@color/card4"
+
                         android:src="@drawable/tycoon">
 
                     </ImageView>
@@ -249,6 +255,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="70dp"
                         android:layout_gravity="left"
+                        app:cardBackgroundColor="@color/bg_color"
                         android:layout_marginLeft="60dp">
                         <ImageView
                             android:layout_width="wrap_content"
@@ -269,6 +276,7 @@
                 android:layout_margin="10dp"
                 android:text="     Tycoon"
                 android:textSize="20dp"
+                android:textColor="@color/club_list_color"
                 android:textStyle="bold">
 
             </TextView>
@@ -294,10 +302,11 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="165dp"
-                android:layout_height="165dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_margin="10dp"
                 android:layout_gravity="center"
+                app:cardBackgroundColor="@color/bg_color"
                 app:cardElevation="30dp"
                 app:cardCornerRadius="20dp">
                 <ImageView
@@ -346,6 +355,7 @@
                 android:textSize="20dp"
                 android:text="AppIntech"
                 android:textStyle="bold"
+                android:textColor="@color/club_list_color"
                 android:layout_gravity="right|center">
 
             </TextView>

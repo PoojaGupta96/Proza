@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.example.jgiclubs"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
-        minSdk = 33
+        applicationId = "com.example.jgiclubs"
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

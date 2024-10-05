@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.jgiclubs;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -62,15 +62,14 @@ public class FossRedirectActivity extends AppCompatActivity {
 
 
     private void swapLayouts(LinearLayout visibleLayout, LinearLayout invisibleLayout) {
-        invisibleLayout.setVisibility(View.INVISIBLE);
-        visibleLayout.setVisibility(View.VISIBLE);
+        if(invisibleLayout.getVisibility() == View.INVISIBLE) {
+            invisibleLayout.setVisibility(View.VISIBLE);
+            visibleLayout.setVisibility(View.VISIBLE);
+        }else {
+            invisibleLayout.setVisibility(View.INVISIBLE);
+            visibleLayout.setVisibility(View.INVISIBLE);
+        }
 
-        // Remove all views from the parent layout
-        parent_layout.removeAllViews();
-
-        // Add the visible layout to the parent layout
-        parent_layout.addView(event_activity);
-        parent_layout.addView(activity_1);
 
     }
 }

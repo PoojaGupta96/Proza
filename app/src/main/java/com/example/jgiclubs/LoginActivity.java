@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.jgiclubs;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
-     DatabaseReference dbref = FirebaseDatabase.getInstance().getReferenceFromUrl("https://academybox-f8b53-default-rtdb.firebaseio.com/");
+     DatabaseReference dbref = FirebaseDatabase.getInstance().getReference();
      private EditText loginusn, loginPassword;
 
     @SuppressLint("MissingInflatedId")

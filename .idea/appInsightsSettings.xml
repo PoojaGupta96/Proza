@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.myapplication" />
-                  <option name="mobileSdkAppId" value="1:715179792970:android:a4f4c0c2b5016e83e4e4b3" />
-                  <option name="projectId" value="academybox-f8b53" />
-                  <option name="projectNumber" value="715179792970" />
+                  <option name="appId" value="com.example.jgiclubs" />
+                  <option name="mobileSdkAppId" value="1:832704271974:android:03cdc1247b8d1ad84c7fa7" />
+                  <option name="projectId" value="jgi-club" />
+                  <option name="projectNumber" value="832704271974" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

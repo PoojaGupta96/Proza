@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.jgiclubs;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -41,7 +41,7 @@ public class SignUpActivity extends AppCompatActivity {
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatabaseReference dbref = FirebaseDatabase.getInstance().getReferenceFromUrl("https://academybox-f8b53-default-rtdb.firebaseio.com/");
+                DatabaseReference dbref = FirebaseDatabase.getInstance().getReference();
 
                 String name = signupName.getText().toString();
                 String usn = signupUsn.getText().toString();
