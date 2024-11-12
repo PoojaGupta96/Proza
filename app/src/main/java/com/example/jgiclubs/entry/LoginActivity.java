@@ -1,4 +1,4 @@
-package com.example.jgiclubs;
+package com.example.jgiclubs.entry;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.jgiclubs.MainActivity;
+import com.example.jgiclubs.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -47,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                             assert getpass != null;
                             if(getpass.equals(pass)){
                                 Toast.makeText(LoginActivity.this, "Succesfully Logged In", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                                startActivity(new Intent(LoginActivity.this, MainActivity.class));
                                 finish();
                             }
                             else{
@@ -67,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        signUpRedirectText.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this,SignUpActivity.class)));
+        signUpRedirectText.setOnClickListener(view -> startActivity(new Intent(LoginActivity.this, SignUpActivity.class)));
     }
 
 }

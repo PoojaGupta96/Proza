@@ -12,6 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.jgiclubs">
         <activity
+            android:name=".events.ImageViewer"
+            android:exported="false"
+            android:theme="@style/Theme.jgiclubs" />
+        <activity
+            android:name=".entry.AdminLogin"
+            android:exported="false"
+            android:theme="@style/Theme.jgiclubs" />
+        <activity
+            android:name=".entry.Login_type"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".activity_appintech_event2"
             android:exported="false" />
         <activity
@@ -27,22 +44,16 @@
             android:name=".AppintechActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_foss_event1"
+            android:name=".events.EventDetails"
             android:exported="false" />
         <activity
             android:name=".FossRedirectActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".entry.LoginActivity"
+            android:exported="true"></activity>
         <activity
-            android:name=".SignUpActivity"
+            android:name=".entry.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -11,33 +11,34 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginTop="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:elevation="10dp"
-            android:backgroundTint="@color/card1"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CardView">
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#F4952C"
+         >
 
             <androidx.cardview.widget.CardView
             android:layout_width="380dp"
-            android:layout_height="180dp"
-            android:layout_marginTop="0dp"
+            android:layout_height="wrap_content"
+
             android:layout_gravity="center_horizontal"
                 android:elevation="50px"
- 
-                android:backgroundTint="@color/grey">
+
+                android:backgroundTint="#F8E1C8">
 
                 <ImageButton
                     android:layout_width="50dp"
                     android:layout_height="30dp"
                      android:src="@drawable/img"
+                    android:visibility="gone"
                     android:layout_marginStart="10dp"
                     android:backgroundTint="@color/grey"
                     android:textColor="@color/black"
@@ -94,275 +95,32 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.appcompat.widget.SwitchCompat
-                android:id="@+id/switchs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center"
-                android:padding="10dp"
-                android:layout_margin="20dp"
-                android:textColor="@color/white"
-                android:textColorHighlight="@color/white"
-                android:textOn="Previous"
-                android:textOff="Upcoming"
-                android:thumb="@drawable/thumb"
-            android:track="@drawable/track"
-            app:showText="true"
-            app:switchTextAppearance="@style/SwitchTextStyle"
-            android:elevation="4dp"
-            />
-
-
-
         </com.google.android.material.card.MaterialCardView>
 
 
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:tabTextColor="#F69B36"
+                app:tabRippleColor="#F6E2CB"
+                app:tabIndicatorColor="#F69B36"
+                android:layout_marginEnd="10dp"
+               app:tabBackground="@color/bg_color"
+                android:layout_marginBottom="10dp"
+                />
 
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="10dp"
-        android:id="@+id/parent_layout">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:elevation="5dp"
-        android:layout_margin="15dp"
-        android:background="@color/card2"
-        android:id="@+id/up_club_event_1">
-
-
-
-
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="250px"
-            android:adjustViewBounds="true"
-            android:contentDescription="Literature"
-            android:id="@+id/date_picker_actions2"
-            android:layout_gravity="center"
-
-            android:focusableInTouchMode="true"
-            android:background="@drawable/touch_selector"
-            android:scaleType="centerInside"
-            android:src="@drawable/date1" />
-
-
-
-        <TextView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:name="com.example.jgiclubs.EventListFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="14dp"
-            android:text="Winner announcement of Project Expo scheduled on 5th Nov 2024"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
-
-
-        <ImageButton
-            android:id="@+id/notify2"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom|right"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:focusableInTouchMode="true"
-            android:paddingRight="12px"
-            android:backgroundTint="@color/card2"
-            android:scaleType="centerInside"
-            android:src="@drawable/noti1" />
-
-        <ImageButton
-            android:id="@+id/share2"
-            android:layout_width="21dp"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom|right"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:backgroundTint="@color/card2"
-            android:focusableInTouchMode="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/share" />
-
-        <ImageButton
-            android:id="@+id/written2"
-            android:layout_width="wrap_content"
-            android:layout_height="16dp"
-            android:layout_gravity="top|center_horizontal"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:backgroundTint="@color/card2"
-            android:focusableInTouchMode="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/written" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:elevation="5dp"
-        android:layout_margin="15dp"
-        android:background="@color/card3"
-        android:id="@+id/up_club_event_2">
-
-
-
-
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="250px"
-            android:adjustViewBounds="true"
-            android:contentDescription="Literature"
-            android:id="@+id/date_picker_actions"
-            android:layout_gravity="center"
-
-            android:focusableInTouchMode="true"
-            android:background="@drawable/touch_selector"
-            android:scaleType="centerInside"
-            android:src="@drawable/date1" />
-
-
-
-        <TextView
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="14dp"
-            android:text="Coding competetion schedule on 31 Sep 2024"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
-
-
-        <ImageButton
-            android:id="@+id/notify"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom|right"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:focusableInTouchMode="true"
-            android:paddingRight="12px"
-            android:backgroundTint="@color/card3"
-            android:scaleType="centerInside"
-            android:src="@drawable/noti1" />
-
-        <ImageButton
-            android:id="@+id/share"
-            android:layout_width="21dp"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom|right"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:backgroundTint="@color/card3"
-            android:focusableInTouchMode="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/share" />
-
-        <ImageButton
-            android:id="@+id/written"
-            android:layout_width="wrap_content"
-            android:layout_height="16dp"
-            android:layout_gravity="top|center_horizontal"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:backgroundTint="@color/card2"
-            android:focusableInTouchMode="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/written" />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/event_activity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:elevation="5dp"
-        android:layout_margin="15dp"
-        android:background="@color/card2"
-        android:visibility="invisible">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="250px"
-            android:adjustViewBounds="true"
-            android:contentDescription="Literature"
-            android:id="@+id/date_picker_actions3"
-            android:layout_gravity="center"
-
-            android:focusableInTouchMode="true"
-            android:background="@drawable/touch_selector"
-            android:scaleType="centerInside"
-            android:src="@drawable/date1" />
-
-
-
-        <TextView
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="14dp"
-            android:text="Project Expo to be conducted within college departments"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
-
-
-        <ImageButton
-            android:id="@+id/notify3"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom|right"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:focusableInTouchMode="true"
-            android:paddingRight="12px"
-            android:backgroundTint="@color/card3"
-            android:scaleType="centerInside"
-            android:src="@drawable/noti1" />
-
-        <ImageButton
-            android:id="@+id/share3"
-            android:layout_width="21dp"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom|right"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:backgroundTint="@color/card3"
-            android:focusableInTouchMode="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/share" />
-
-        <ImageButton
-            android:id="@+id/written3"
-            android:layout_width="wrap_content"
-            android:layout_height="16dp"
-            android:layout_gravity="top|center_horizontal"
-            android:adjustViewBounds="true"
-            android:background="@drawable/touch_selector"
-            android:backgroundTint="@color/card2"
-            android:focusableInTouchMode="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/written" />
-
-        <!-- Add views for event_activity here, matching the structure of club_event_1 -->
-        <!-- For example, copy the ImageButton, TextView, and other views from club_event_1 -->
-        <!-- Adjust the IDs, content, and other attributes as needed -->
-
-    </LinearLayout>
-    </LinearLayout>
-
-
-
-
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".EventListFragment"
+            tools:listitem="@layout/fragment_event_list" />
+        </LinearLayout>
 
 </LinearLayout>

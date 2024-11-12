@@ -13,5 +13,13 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+        <style name="cr41">
+            <item name="cornerSize">41dp</item>
+        </style>
+        <style name="cr36">
+            <item name="cornerSize">36dp</item>
+        </style>
+
+
 
 </resources>
