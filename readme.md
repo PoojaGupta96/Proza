@@ -85,6 +85,9 @@ cd Proza
 Contributions are welcome! 🎉  
 Feel free to:
 
+Our Team 
+Anubhav Chaturvedi
+
 - 🍴 Fork the repository  
 - 🐛 Open issues  
 - 📥 Submit pull requests  
