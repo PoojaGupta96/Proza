@@ -86,7 +86,10 @@ Contributions are welcome! 🎉
 Feel free to:
 
 Our Team 
-Anubhav Chaturvedi
+[Anubhav Chaturvedi](https://github.com/AnubhavChaturvedi-GitHub)  
+[Harsh Jaiswal](https://github.com/HarshJAISWAL0011/Proza)  
+[Amnendra Sharma](https://github.com/Amnendra)
+[Pooja Gupta](https://github.com/PoojaGupta96)
 
 - 🍴 Fork the repository  
 - 🐛 Open issues  
