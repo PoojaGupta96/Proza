@@ -2,7 +2,7 @@
 
 **Proza** is a Java-based Android application that simplifies campus club management and enhances student engagement and they can even interact with the alumni for the further guidance and get insight about the placement opportunities . It provides a centralized platform where students can explore, interact, and stay updated on campus activities, while administrators can manage club operations with ease.
 
----
+-------
 
 ## ✨ Features
 
